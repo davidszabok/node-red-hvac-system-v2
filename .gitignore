@@ -1,0 +1,11 @@
+# Only the reviewed public export and documentation belong here.
+*.env
+.env
+*cred*.json
+*.sql.gz
+*.sql.zip
+*.pem
+*.key
+node_modules/
+work/
+backup*
