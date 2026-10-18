@@ -6,9 +6,9 @@ Az új változat a szezonális padlófűtés és klíma közötti választást, 
 
 ## Dutch Turf az NSPanelen
 
-Az alábbi, korábbi ellenőrzési képernyőkép a Dutch Turf szobavezérlési felugró paneljét mutatja. A képen a fűtésautomatika ideiglenesen szünetelt.
+Az alábbi mock kép a Dutch Turf főképernyőjét mutatja. A személyes szobaneveket elmostuk; a megjelenés egy korábbi ellenőrzési képernyőképen alapul.
 
-![Dutch Turf szobavezérlési felugró panel az NSPanelen](assets/dutch-turf-room-popup.png)
+![Dutch Turf főképernyő az NSPanelen, elmosott szobanevekkel](assets/dutch-turf-main-mock.png)
 
 ## Tartalom
 
