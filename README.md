@@ -4,6 +4,12 @@ Ez a repository az otthoni Node-RED rendszer **HVAC Core** és **Datacollecting 
 
 Az új változat a szezonális padlófűtés és klíma közötti választást, a külső szobaszenzorral vezérelt klímafűtést, a fürdő páravezérelt szellőztetését, valamint az adatgyűjtés és a napi riport bővített ellenőrzését tartalmazza. A napi összefoglaló Budapest időzónában 08:05-kor készül.
 
+## Dutch Turf az NSPanelen
+
+Az alábbi, korábbi ellenőrzési képernyőkép a Dutch Turf szobavezérlési felugró paneljét mutatja. A képen a fűtésautomatika ideiglenesen szünetelt.
+
+![Dutch Turf szobavezérlési felugró panel az NSPanelen](assets/dutch-turf-room-popup.png)
+
 ## Tartalom
 
 - [`flows/hvac-and-reporting.public.json`](flows/hvac-and-reporting.public.json): a két összetartozó flow-lap és az általuk használt konfigurációs node-ok.
