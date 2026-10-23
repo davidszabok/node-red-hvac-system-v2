@@ -1,0 +1,16 @@
+#security{display:flex;align-items:center;gap:6px;border:1px solid #a8bf9466;border-radius:9px;background:#0a2116a6;padding:8px 10px;font-size:10px;font-weight:500;box-shadow:inset 0 1px #d9e8b90d}
+#security svg{width:16px;height:18px;fill:none;stroke:#d9e8bb;stroke-width:1.5}
+#securityDialog{width:450px;max-height:min(456px,calc(100dvh - 16px));min-height:340px}
+.security-heading{height:70px;padding:14px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #b8cda130;background:linear-gradient(120deg,#25472d,#0b2119)}
+.security-heading>div{flex:1;min-width:0}.security-heading h1{font-size:21px;margin:2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.security-heading small{font-size:9px;letter-spacing:.6px;color:#d5dfbe}
+#cameraBack{width:32px;height:32px;border:1px solid #c5cfa56b;border-radius:8px;background:#10261d8c;font-size:20px}
+#cameraBack[hidden],[hidden]{display:none!important}
+#cameraListView{padding:16px}#cameraList{display:flex;flex-direction:column;gap:8px;max-height:265px;overflow:auto}
+.camera-row{width:100%;display:flex;align-items:center;gap:12px;text-align:left;min-height:54px;padding:12px;border:1px solid #b1c49e4a;border-radius:10px;background:#b1c49e0b;font-size:14px}
+.camera-row>span:nth-child(2){flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.camera-row small{font-size:9px;color:#c3cfb7;white-space:nowrap}.camera-row-icon{font-size:21px;color:#d2e1b2}
+#cameraListStatus,.security-note{font-size:10px;color:#c3cfb7;line-height:1.5}.security-note{border-top:1px solid #b8cda12a;margin:12px 0 0;padding-top:10px}
+#cameraView{padding:14px}.camera-frame{position:relative;width:100%;aspect-ratio:16/9;display:grid;place-items:center;overflow:hidden;border:1px solid #b1c49e45;border-radius:9px;background:#050e0a}
+#cameraVideo{width:100%;height:100%;object-fit:contain}.camera-frame p{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;font-size:12px;line-height:1.6;color:#d5dfbe}
+.camera-toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:12px;font-size:10px;color:#c3cfb7}.camera-toolbar button{border:1px solid #b1c49e4a;border-radius:8px;background:#b1c49e0b;padding:8px 10px;font-size:10px}
+@media(max-width:479px){#security{font-size:9px;padding:7px;gap:5px}header{gap:10px}.security-heading h1{font-size:19px}}
+#cameraPairing{text-align:center;padding:10px;border:1px solid #b1c49e4a;border-radius:10px;background:#b1c49e0b}#cameraPairing>strong{font-size:14px}#cameraPairing p{font-size:10px;line-height:1.6;color:#c3cfb7}#cameraPairCode{display:block;font-size:30px;letter-spacing:5px;color:#f6d986;margin:10px}

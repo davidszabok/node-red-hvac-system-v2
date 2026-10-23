@@ -4,6 +4,8 @@ Ez a repository az otthoni Node-RED rendszer **HVAC Core** és **Datacollecting 
 
 Az új változat a szezonális padlófűtés és klíma közötti választást, a külső szobaszenzorral vezérelt klímafűtést, a fürdő páravezérelt szellőztetését, valamint az adatgyűjtés és a napi riport bővített ellenőrzését tartalmazza. A napi összefoglaló Budapest időzónában 08:05-kor készül.
 
+**2026. október 23-i csomagfrissítés:** a repository már tartalmazza az október 18-i flow-hoz illeszkedő Dutch Turf felületet, a kamerás élőkép kliensét és a telepítési útmutatót. A flow exportja változatlan; a későbbi AUTO BE/KI fejlécgomb és annak háttérmódosításai nem részei ennek a verziónak.
+
 ## Dutch Turf az NSPanelen
 
 Az alábbi mock kép a Dutch Turf főképernyőjét mutatja. A személyes szobaneveket elmostuk; a megjelenés egy korábbi ellenőrzési képernyőképen alapul.
@@ -15,6 +17,9 @@ Az alábbi mock kép a Dutch Turf főképernyőjét mutatja. A személyes szoban
 - [`flows/hvac-and-reporting.public.json`](flows/hvac-and-reporting.public.json): a két összetartozó flow-lap és az általuk használt konfigurációs node-ok.
 - [`sql/schema.sql`](sql/schema.sql): a meglévő pillanatkép- és `live_snapshot` táblák mintasémája.
 - [`sql/schema-v2.sql`](sql/schema-v2.sql): a döntésnapló és a gyűjtési ciklusok két további táblája.
+- [`src/dutch-turf/`](src/dutch-turf/): a teljes Dutch Turf UIBUILDER-felület, háttérképpel, kameralistával, böngészőpárosítással és H.264 élőkép-lejátszóval.
+- [`docs/DUTCH_TURF_INSTALLATION_HU.md`](docs/DUTCH_TURF_INSTALLATION_HU.md): a felület és a kamerás háttér beüzemelése, FFmpeg-előkészítés és ellenőrzések.
+- [`docs/CAMERAS_HU.md`](docs/CAMERAS_HU.md): kameraműködés, hozzáférés, korlátok és a korábbi helyszíni ellenőrzés eredménye.
 
 ## Importálás
 
@@ -25,7 +30,7 @@ Az alábbi mock kép a Dutch Turf főképernyőjét mutatja. A személyes szoban
 5. Keress rá az összes `REPLACE_WITH_`, `example.com` és `192.0.2.10` mintára. Az eszközazonosítókat a Function node-ok saját térképeiben is pótolni kell. A helyi webes végpontokat, időjárási koordinátákat és UIBUILDER-forrásfájlokat a saját telepítésedhez kell igazítani.
 6. Ellenőrizd a szenzorok frissességét, a relé- és klíma-visszajelzéseket, az SQL írásokat és az előnézeti HTML-riportot. Csak ezután engedélyezd az éles vezérlést és az e-mail küldést.
 
-Az export **nem kulcsrakész telepítő**. A helyettesített címek és azonosítók szándékosan érvénytelenek. A képernyők UIBUILDER-forrásfájljai és a rendszer többi tíz, más célú flow-lapja nincsenek ebben a csomagban.
+Az export **nem kulcsrakész telepítő**. A helyettesített címek és azonosítók szándékosan érvénytelenek. A Dutch Turf forrásfájljait a [részletes útmutató](docs/DUTCH_TURF_INSTALLATION_HU.md) szerint kell telepíteni; a régi `nscompact` és `nsdesktop2` képernyők forrása a [külön dashboard repositoryban](https://github.com/davidszabok/nspanel-node-red-dashboard) található. A rendszer többi tíz, más célú flow-lapja nincs ebben a csomagban.
 
 ## Közzététel és biztonság
 
